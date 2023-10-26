@@ -149,7 +149,7 @@ function balloonFlower_addFlower() {
   let num = balloonFlower_randomNum(0, balloonFlower_conf.travelNumber - 1);
   newDiv.style.animation = 'balloonFlower_animation_' + num + ' ' + balloonFlower_conf.animationLifeTime + ' linear  forwards';
   out.appendChild(newDiv);
-  setTimeout(evs = >{
+  setTimeout(evs =>{
     out.removeChild(newDiv)
   },
   parseInt(balloonFlower_conf.animationLifeTime) * 1000)
